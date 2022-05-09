@@ -1,0 +1,80 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="mine.css">
+    </head>
+    <body bgcolor="#fff8dc">
+	<h1 ><center>
+        SHOPPERS DELIGHT
+        </center>
+        </h1>
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <h2>LOGIN FORM</h2>
+                        <form>
+                            <input id="mail" type="email" class="input-box" placeholder="ENTER YOUR EMAIL" required>
+                            <input id="pas" type="password" class="input-box" placeholder="ENTER YOUR PASSWORD" required>
+                            <input type="submit" class="submit-btn" onclick="clicked(event)" placeholder="LOGIN" value="LOGIN">
+                            
+                            <input type="checkbox"><span>REMEMBER ME</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">I AM NEW HERE</button>
+                        <a href="forgot.html">FORGOT PASSWORD</a>
+                    </div>
+                    <div class="card-back">
+                        <h2>REGISTER FORM</h2>
+                        <form>
+                            <input type="text" class="input-box" placeholder="ENTER YOUR NAME" required>
+                            <input id="mail" type="email" class="input-box" placeholder="ENTER YOUR EMAIL" required>
+                            <input id="pas" type="password" class="input-box" placeholder="ENTER YOUR PASS" required>
+                            <input type="submit" class="submit-btn" onclick="clicked(event)" placeholder="REGISTER" value="REGISTER">
+                            <input type="checkbox"><span>REMEMBER ME</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">I ALREADY HAVE AN ACCOUNT</button>
+                        <a href="forgot.html">FORGOT PASSWORD</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bubbles">
+                
+                <img src="images/bubble1.png" alt="">
+                <img src="images/bubble1.png" alt="">
+                <img src="images/bubble1.png" alt="">
+                <img src="images/bubble1.png" alt="">
+                <img src="images/bubble1.png" alt="">
+                <img src="images/bubble1.png" alt="">
+                <img src="images/bubble1.png" alt="">
+            
+            </div>
+        </div>
+        <script>
+            function clicked(k){
+                k.preventDefault();
+                var v = document.querySelector('#mail');
+                var i = v.value;
+                var b = document.querySelector('#pas');
+                var y = b.value;
+                if(i === ""){
+                    alert("FILL THE MAIL ID")
+                }
+                if(y === ""){
+                    alert("FILL THE PASSWORD")
+                }
+                else{
+                    location.href = "index.html"
+                }
+            }
+            
+           var card = document.getElementById("card");  
+            function openRegister(){
+                card.style.transform = "rotateY(-180deg)";
+            }
+            function openLogin(){
+                card.style.transform = "rotateY(0deg)";
+            }
+            
+        </script>>
+    </body>
+</html>
