@@ -33,9 +33,9 @@
                     <b>
                 Call : +91 7876858388<br>
                   <i class="fa fa-phone" aria-hidden="true"></i>
-		        Call : +91 7009323463<br>
+		        Call : +91 7707908940<br>
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                Call : +91 9653710624<br>
+                Call : +91 9501571234<br>
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 Call : +91 7508700324<br>
                 </b>
@@ -139,7 +139,7 @@
              <h2>Password</h2>
                 <input type="password"
                      class="input" value="brightcode">
-         <button class="btn">Update</button>
+         <button class="btnn" onclick="myfunc2()">Update</button>
     </div>
         <div class="payment-tabShow">
             <h1 style="font-size: 30px;">Payment Info</h1>
@@ -158,7 +158,7 @@
              <h2>Redeem Card</h2>
             <input type="password"
              class="input" value="Enter Gift Code">
-             <button class="btn">Update</button>
+             <button class="btnn" onclick="myfunc()">Update</button>
         </div>
         <div class="home">
             <a href="index.html"><button class="btnn">BACK TO HOME PAGE</button></a>
@@ -185,6 +185,12 @@ function tabs(panelindex) {
         $(".tab").click(function() {
          $(this).addClass("active").siblings().removeClass("active");
         })
+        function myfunc(){
+          alert("Personal Info updated!");
+        }
+        function myfunc2(){
+          alert("Payment Info updated!");
+        }
         </script>
     </BODY>
 </HTML>
